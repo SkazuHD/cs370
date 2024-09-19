@@ -15,10 +15,7 @@ services:
     user: vscode
     # ports:
     #   - 9000:9000 # Minio's HTTP port
-    volumes:
-      # Update this to wherever you want VS Code to mount the folder of your project
-      - .:/workspaces/eng-ai-agents:cached
-      - rye-cache:/home/vscode/.rye/cache  # Persist the Rye cache
+    
 
     # Uncomment the next four lines if you will use a ptrace-based debugger like C++, Go, and Rust.
     # cap_add:

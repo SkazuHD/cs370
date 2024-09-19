@@ -12,6 +12,10 @@ services:
       # depends_on:
       #   - minio
         #- postgresml
+      volumes:
+      # Update this to wherever you want VS Code to mount the folder of your project
+      - .:/workspaces/eng-ai-agents:cached
+      - rye-cache:/home/vscode/.rye/cache  # Persist the Rye cache
       environment:
       - NVIDIA_VISIBLE_DEVICES=all  # or specify GPUs as 0,1 for specific devices
       deploy:
