@@ -9,3 +9,7 @@ Contains two Jupyter Notebooks
 - Logistic Regression
 
 - Submission Date: 10/05/2024
+
+## Datasets:
+Download the train.gz Dataset and place it in the subdirectory called data
+- [https://huggingface.co/datasets/SkazuHD/cs370/tree/main/assignment-1b](https://huggingface.co/datasets/SkazuHD/cs370/tree/main/assignment-1b)
