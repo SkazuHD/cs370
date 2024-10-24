@@ -65,6 +65,7 @@ dependencies = [
     "optuna<3.0.0",
     "ray>=2.35.0",
     "captum>=0.7.0",
+    "tensorflow==2.16.2",
 ]
 readme = "README.md"
 requires-python = "== 3.11.9"
