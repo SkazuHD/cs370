@@ -42,6 +42,7 @@ amqp==5.2.0
     # via kombu
 annotated-types==0.7.0
     # via pydantic
+anomalib==1.1.1
 antlr4-python3-runtime==4.9.3
     # via hydra-core
     # via omegaconf
@@ -179,6 +180,9 @@ distlib==0.3.8
 distro==1.9.0
     # via dvc
     # via iterative-telemetry
+docstring-parser==0.16
+    # via anomalib
+    # via jsonargparse
 dpath==2.2.0
     # via dvc
 dulwich==0.22.1
@@ -317,7 +321,11 @@ idna==3.8
     # via requests
     # via yarl
 imageio==2.35.1
+    # via imgaug
     # via scikit-image
+imgaug==0.4.0
+importlib-resources==6.4.5
+    # via typeshed-client
 iniconfig==2.0.0
     # via pytest
 ipykernel==6.29.5
@@ -350,6 +358,8 @@ joblib==1.4.2
     # via scikit-learn
 json5==0.9.25
     # via jupyterlab-server
+jsonargparse==4.33.2
+    # via anomalib
 jsonpointer==3.0.0
     # via jsonschema
 jsonschema==4.23.0
@@ -437,6 +447,7 @@ markupsafe==2.1.5
 matplotlib==3.9.2
     # via captum
     # via hist
+    # via imgaug
     # via mplhep
     # via pycocotools
     # via seaborn
@@ -505,6 +516,7 @@ numpy==1.26.4
     # via hist
     # via histoprint
     # via imageio
+    # via imgaug
     # via keras
     # via lightly
     # via lightly-utils
@@ -513,6 +525,7 @@ numpy==1.26.4
     # via mplhep
     # via numba
     # via numexpr
+    # via opencv-python
     # via opencv-python-headless
     # via optuna
     # via pandas
@@ -522,6 +535,7 @@ numpy==1.26.4
     # via scikit-learn
     # via scipy
     # via seaborn
+    # via shapely
     # via tensorboard
     # via tensorboard-logger
     # via tensorflow
@@ -559,8 +573,11 @@ nvidia-nvjitlink-cu12==12.6.68
 nvidia-nvtx-cu12==12.1.105
     # via torch
 omegaconf==2.3.0
+    # via anomalib
     # via dvc
     # via hydra-core
+opencv-python==4.10.0.84
+    # via imgaug
 opencv-python-headless==4.10.0.84
 opt-einsum==3.4.0
     # via tensorflow
@@ -620,6 +637,7 @@ pexpect==4.9.0
 pillow==10.4.0
     # via clearml
     # via imageio
+    # via imgaug
     # via lightly-utils
     # via matplotlib
     # via scikit-image
@@ -631,6 +649,7 @@ pinecone-plugin-inference==1.0.3
 pinecone-plugin-interface==0.0.7
     # via pinecone-client
     # via pinecone-plugin-inference
+pip==24.2
 platformdirs==3.11.0
     # via dvc
     # via jupyter-core
@@ -733,6 +752,7 @@ pyyaml==6.0.2
     # via cliff
     # via datasets
     # via huggingface-hub
+    # via jsonargparse
     # via jupyter-events
     # via lightning
     # via omegaconf
@@ -770,10 +790,14 @@ rfc3986-validator==0.1.1
     # via jsonschema
     # via jupyter-events
 rich==13.8.0
+    # via anomalib
     # via dvc
     # via gto
     # via keras
+    # via rich-argparse
     # via typer
+rich-argparse==1.5.2
+    # via anomalib
 rootutils==1.0.7
 rpds-py==0.20.0
     # via jsonschema
@@ -795,10 +819,12 @@ s3transfer==0.10.2
 safetensors==0.4.4
     # via timm
 scikit-image==0.24.0
+    # via imgaug
 scikit-learn==1.5.1
     # via pynndescent
     # via umap-learn
 scipy==1.14.1
+    # via imgaug
     # via optuna
     # via pynndescent
     # via scikit-image
@@ -821,6 +847,8 @@ setuptools==74.1.1
     # via tensorboard
     # via tensorflow
     # via zc-lockfile
+shapely==2.0.6
+    # via imgaug
 shellingham==1.5.4
     # via typer
 shortuuid==1.0.13
@@ -837,6 +865,7 @@ six==1.16.0
     # via flatten-dict
     # via furl
     # via google-pasta
+    # via imgaug
     # via lightly
     # via orderedmultidict
     # via pathlib2
@@ -953,6 +982,8 @@ typer==0.12.5
 types-python-dateutil==2.9.0.20240821
     # via arrow
 types-requests==2.32.0.20240712
+typeshed-client==2.7.0
+    # via jsonargparse
 typing-extensions==4.12.2
     # via alembic
     # via asyncssh
@@ -970,6 +1001,7 @@ typing-extensions==4.12.2
     # via tensorflow
     # via torch
     # via typer
+    # via typeshed-client
 tzdata==2024.1
     # via celery
     # via pandas

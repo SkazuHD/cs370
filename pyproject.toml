@@ -66,6 +66,10 @@ dependencies = [
     "ray>=2.35.0",
     "captum>=0.7.0",
     "tensorflow==2.16.2",
+    "anomalib>=1.1.1",
+    "imgaug>=0.4.0",
+    "pip>=24.2",
+    "opencv-python>=4.10.0.84",
 ]
 readme = "README.md"
 requires-python = "== 3.11.9"
