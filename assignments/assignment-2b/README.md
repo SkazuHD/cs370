@@ -3,7 +3,7 @@
 Contains one Jupyter Notebook
 
 2b-assignment-1.ipynb:
-- Anomaly Detection with Anomalib:
+- Anomaly Detection on the MVTec dataset with Anomalib:
   - PatchCore
   - EfficientAd
 
