@@ -61,7 +61,7 @@ dependencies = [
     "scikit-image>=0.24.0",
     "hist[plot]>=2.7.3",
     "tqdm>=4.66.5",
-    "clearml>=1.16.4",
+    "clearml>=1.16.5",
     "optuna<3.0.0",
     "ray>=2.35.0",
     "captum>=0.7.0",

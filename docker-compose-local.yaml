@@ -27,7 +27,7 @@ services:
               device_ids: ["all"]  # Specify GPU IDs if needed, or 'all' to use all available GPUs
       networks:
         - eng-ai-agents-net
-      
+
   # minio:
   #   image: minio/minio:latest
   #   container_name: minio
@@ -68,6 +68,7 @@ services:
 
 networks:
   eng-ai-agents-net:
+    name: eng-ai-agents-net
     driver: bridge
 
 volumes:
