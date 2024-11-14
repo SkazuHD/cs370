@@ -6,7 +6,8 @@ services:
         context: "."
         dockerfile: ./docker/Dockerfile.dev.gpu
       image: eng-ai-agents
-      shm_size: '8gb'  # Shared memory size
+      restart: unless-stopped
+      shm_size: '16gb'  # Shared memory size
       user: vscode
       command: /bin/sh -c "while sleep 1000; do :; done"
       # depends_on:
