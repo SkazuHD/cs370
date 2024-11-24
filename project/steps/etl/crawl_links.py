@@ -1,11 +1,11 @@
 from urllib.parse import urlparse
 
-from app.application.crawlers.dispatcher import CrawlerDispatcher
-
 # from clearml import get_step_context, step
 from loguru import logger
 from tqdm import tqdm
 from typing_extensions import Annotated
+
+from project.app.crawler.dispatcher import CrawlerDispatcher
 
 
 # @step
