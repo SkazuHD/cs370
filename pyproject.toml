@@ -71,6 +71,9 @@ dependencies = [
     "pip>=24.2",
     "opencv-python>=4.10.0.84",
     "gradio>=5.5.0",
+    "selenium>=4.26.1",
+    "chromedriver-autoinstaller>=0.6.4",
+    "loguru>=0.7.2",
 ]
 readme = "README.md"
 requires-python = "== 3.11.9"
